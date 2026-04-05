@@ -40,7 +40,8 @@ import {
   Waves,
   Search,
   Sparkles,
-  PhoneCall
+  PhoneCall,
+  Mail
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -52,6 +53,7 @@ const WHATSAPP_MESSAGE = encodeURIComponent('Hello KR Borewells, I need borewell
 const WHATSAPP_LINK = `https://wa.me/${PHONE_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 const PHONE_LINK = `tel:${PHONE_PRIMARY}`;
 const PHONE_LINK_SECONDARY = `tel:${PHONE_SECONDARY}`;
+const EMAIL = 'rpnaidu456@gmail.com';
 const ADDRESS = 'KR Borewell, Nellore, Srinagar Colony Extension, AC Nagar, Balaji Nagar, Nellore, Andhra Pradesh 524002';
 const GOOGLE_MAPS_LINK = 'https://www.google.com/maps?q=KR+BOREWELL+Nellore+Srinagar+Colony+Extension+AC+Nagar+Balaji+Nagar+Nellore+Andhra+Pradesh+524002';
 
@@ -206,6 +208,16 @@ const Footer = ({ setActivePage }: { setActivePage: (page: string) => void }) =>
           <span>|</span>
           <a href={PHONE_LINK_SECONDARY} className="hover:text-primary transition-colors">{PHONE_SECONDARY}</a>
         </div>
+      </div>
+      <div className="mt-6 text-center">
+        <a 
+          href="https://uxitech.in" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-slate-500 hover:text-primary text-sm font-body transition-colors"
+        >
+          Built by <span className="font-bold">UXITech</span>
+        </a>
       </div>
     </div>
   </footer>
@@ -593,6 +605,15 @@ const AboutPage = ({ setActivePage }: { setActivePage: (page: string) => void })
                     <span className="font-headline font-bold text-lg text-slate-900 group-hover:text-white">{PHONE_SECONDARY}</span>
                   </a>
                 </div>
+
+                {/* Email */}
+                <a 
+                  href={`mailto:${EMAIL}`}
+                  className="flex items-center gap-3 bg-slate-50 hover:bg-primary hover:text-white rounded-xl p-4 transition-all group border border-slate-200 mb-6"
+                >
+                  <Mail className="w-5 h-5 text-primary group-hover:text-white" />
+                  <span className="font-headline font-bold text-slate-900 group-hover:text-white">{EMAIL}</span>
+                </a>
 
                 {/* Action Buttons */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
