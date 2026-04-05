@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# KR Borewells - Professional Borewell Services
 
-# Run and deploy your AI Studio app
+Professional borewell drilling services website for KR Borewells, Nellore, Andhra Pradesh.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/dc93b74f-d52c-429f-be41-a9667f29fc08
+- Modern responsive design
+- About section with owner profile
+- Call & WhatsApp integration
+- Google Maps location
+- Floating contact buttons
+- SEO optimized
+
+## Contact
+
+- Phone: 9440207002, 8008877802
+- Location: Nellore, Andhra Pradesh
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```
+   npm install
+   ```
+2. Run the app:
+   ```
+   npm run dev
+   ```
+3. Open http://localhost:3000
+
+## Build for Production
+
+```
+npm run build
+```
